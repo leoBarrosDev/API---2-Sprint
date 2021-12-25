@@ -6,4 +6,8 @@ const bodyParser = require('body-parser')
 
 app.use(bodyParser.json())
 
+const roteador = require('./rotas/atividades')
+app.use('/api/atividades', roteador)
+
+
 app.listen(config.get('api.porta'), ()=> console.log('API FUNCIONANDO'))
