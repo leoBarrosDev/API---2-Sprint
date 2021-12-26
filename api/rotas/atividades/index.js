@@ -63,5 +63,23 @@ roteador.put('/:idAtividade', async (req, res) => {
     }
 })
 
+roteador.delete('/:idAtividade', async (req, res) => {
+    try {
+        const id = req.params.idAtividade
+        const atividade = new Atividade({ id: id })
+        await atividade.carregar()
+        await atividade.remover()
+        res.status(204)
+        res.end
+    } catch (erro) {
+        res.status(404)
+        res.send(
+            JSON.stringify({
+                mensagem: erro.message
+            })
+        )
+
+    }
+})
 
 module.exports = roteador

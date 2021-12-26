@@ -50,6 +50,10 @@ class Fornecedor {
         await TabelaAtividade.atualizar(this.id, dadosParaAtualizar)
     }
 
+    remover() {
+        return TabelaAtividade.remover(this.id)
+    }
+
 }
 
 module.exports = Fornecedor
