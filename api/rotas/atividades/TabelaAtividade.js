@@ -1,3 +1,4 @@
+
 const Modelo = require('./ModeloTabelaAtividade')
 
 module.exports = {
@@ -5,7 +6,31 @@ module.exports = {
         return Modelo.findAll()
     },
 
-    inserir(atividade){
+    inserir(atividade) {
         return Modelo.create(atividade)
+    },
+
+    async selecionarPorId(id) {
+        const encontrada = await Modelo.findOne({
+            where: {
+                id: id
+            }
+        })
+
+        if (!encontrada) {
+            throw new Error('Atividade não encontrada')
+        }
+
+        return encontrada
+    },
+
+    atualizar(id, dadosParaAtualizar) {
+        return Modelo.update(
+            dadosParaAtualizar,
+            {
+                where: { id: id }
+            }
+        )
     }
+
 }
