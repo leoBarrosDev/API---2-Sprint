@@ -1,6 +1,7 @@
-const version = require('nodemon/lib/version')
+
 const Sequelize = require('sequelize')
 const instancia = require('../../banco-de-dados')
+
 
 const colunas = {
 
@@ -17,11 +18,13 @@ const colunas = {
     description:{
       type: Sequelize.STRING,
       allowNull: false
-    },
+    }
+    /*
     task: {
       type: Sequelize.STRING,
       allowNull: false
     }
+    */
   
   }
 

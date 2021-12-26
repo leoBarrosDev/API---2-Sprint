@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const instancia = require('../api/data')
+const instancia = require('../../banco-de-dados')
 
 const colunas = {
     title: {
@@ -11,14 +11,14 @@ const colunas = {
         allowNull: false
     },
     completed: {
-        type: Sequelize.ENUM('true', 'false'),
+        type: Sequelize.ENUM('false', 'true'),
         allowNull: false
     },
     tarefas: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-            model: require('./ModeloTabelaProject'),
+            model: require('../atividades/ModeloTabelaAtividade'),
             key: 'id'
         }
     }
@@ -32,4 +32,4 @@ const opcoes = {
     updatedAt: 'dataAtualizacao'
 }
 
-module.exports = instancia.define('tarefas', colunas, opcoes)
+module.exports = instancia.define('tasks', colunas, opcoes)
