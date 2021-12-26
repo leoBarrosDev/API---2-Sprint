@@ -70,7 +70,7 @@ roteador.delete('/:idAtividade', async (req, res) => {
         await atividade.carregar()
         await atividade.remover()
         res.status(204)
-        res.end
+        res.end()
     } catch (erro) {
         res.status(404)
         res.send(
@@ -81,5 +81,9 @@ roteador.delete('/:idAtividade', async (req, res) => {
 
     }
 })
+
+
+const roteadorTasks = require('./tasks')
+roteador.use('/:idAtividade/tasks', roteadorTasks)
 
 module.exports = roteador

@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const instancia = require('../../banco-de-dados')
+const instancia = require('../../../banco-de-dados')
 
 const colunas = {
     title: {
@@ -14,11 +14,11 @@ const colunas = {
         type: Sequelize.ENUM('false', 'true'),
         allowNull: false
     },
-    tarefas: {
+    atividade: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-            model: require('../atividades/ModeloTabelaAtividade'),
+            model: require('../ModeloTabelaAtividade'),
             key: 'id'
         }
     }

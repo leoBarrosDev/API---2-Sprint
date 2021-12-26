@@ -1,7 +1,7 @@
 const TabelaAtividade = require('./TabelaAtividade')
 
 
-class Fornecedor {
+class Atividade {
     constructor({ id, title, description, dataCriacao, dataAtualizacao, task }) {
         this.id = id
         this.title = title
@@ -56,4 +56,4 @@ class Fornecedor {
 
 }
 
-module.exports = Fornecedor
+module.exports = Atividade
