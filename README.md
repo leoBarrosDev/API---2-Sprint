@@ -43,13 +43,6 @@ Testes automatizados ainda não foram implementados
 * [NodeJS](https://nodejs.org/en/download/) - Para execução de código Java Script fora de um navegador web.
 * [GIT](https://git-scm.com/downloads) - Usado para versionamento de código
 
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
 
 ## ✒️ Autores
 
