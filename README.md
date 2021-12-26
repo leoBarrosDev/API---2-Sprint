@@ -1,6 +1,6 @@
-# Título do projeto
+# CRUD - NodeJS
 
-Um parágrafo da descrição do projeto vai aqui
+Desafio proposto como avaliação da 2ª Sprint do Programa de Bolsas em NodeJS - Compass UOL
 
 ## 🚀 Começando
 
@@ -10,60 +10,37 @@ Consulte **Implantação** para saber como implantar o projeto.
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
-
-```
-Dar exemplos
-```
+Banco de dados relacional, nesse caso foi utilizado o MySQL como SGBD
+POSTMAN para testar as rotas implementadas
+NodeJS instalado na maquina
+Foi utilizado como editor de código o VSCode
+Foi utilizado o Git Bash como terminal para execução das linhas de comando
 
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+1) Clone o repositório remoto para sua maquina local usando o comando abaixo:
+2) Edite o arquivo \PB_NodeJS\CRUD-Sprint2\config\default.json inserindo nele os parametros de acesso do seu banco de dados
+3) Crie o banco de dados 'CRUD', isso pode ser feito tanto pelo SGBD como via linha de comando, fique a vontade
+4) Abra o diretório do projeto no editor de código de sua preferência
+5) Execute o comando 'npm install' para que as dependencias utilizadas no projeto sejam instaladas em sua máquina
+6) Execute o arquivo criarTabelas.js que encontrasse em \PB_NodeJS\CRUD-Sprint2\api\banco-de-dados, nesse momento duas tabelas serão criadas em seu banco já existente
+7) Execute o comando 'npm start', nesse momento a API será inicializada e uma mensagem deve aparecer no terminal indicando que a mesma está funcionando
+8) Abra o POSTMAN para realizar o teste das rotas, na url digite http://localhost:3000/api/project/ e selecione o método GET, pressione o botão SEND, o sistema irá retornar todos os registros do banco de dados CRUD
+9) Ainda no POSTMAN podemos inserir dados no banco por meio do método POST, na url insira http://localhost:3000/api/project/, selecione a opção Body, depois a opção raw e JSON, no corpo do Body insira os dados por meio de um objeto tipo json, como as chaves "title" e "description", pressione SEND para que os mesmos sejam inseridos no banco de dados
+10) Caso queira buscar no banco um registro em específico basta repetir o processo do primeiro método usado para listar os registro, passando apenas o ID desejado como parametro, por exemplo: http://localhost:3000/api/project/4
+11) Caso queira atualizar o registro, use a url acima, trocando apenas para o método PUT, lembre de passar os valores no corpo do body, assim como no post
+12) Use a url acima, só que agora com o método DELETE para apagar o registro do banco.
 
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 ## ⚙️ Executando os testes
 
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 📦 Desenvolvimento
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+Testes automatizados ainda não foram implementados
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
+* [VSCode](https://code.visualstudio.com/?wt.mc_id=DX_841432) - Editor de código utilizado
+* [POSTMAN](https://www.postman.com/downloads/) - Software utilizado para testar os métodos implementados na API
+* [NodeJS](https://nodejs.org/en/download/) - Para execução de código Java Script fora de um navegador web.
 * [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
 
 ## 🖇️ Colaborando
@@ -76,23 +53,17 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
+* **Leandro Barros** - *Estudante* - [Leandro Barros](https://https://github.com/leoBarrosDev)
 
 ## 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
 
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢
-* Convide alguém da equipe para uma cerveja 🍺 
-* Obrigado publicamente 🤓.
-* etc.
+* Meus agradecimentos a toda equipe da Compass UOL envoldida no programa de bolsas, em especial aos instrutores que estavam prontos para tirar dúvidas não importava o dia da semana nem a hora (exceto no fds após o Natal) 📢
+* Espero ter a oportunidade de tomar um CHOPP futuramente com todos, já como programador contratado pela empresa 🍺 
+* Um obrigado muito especial para Steve, o pato imaginário com quem converso na intenção de resolver os bugs do sistema, esse final de semana ele não ajudou muito, creio que tenha bedido além da conta🤓.
+*
 
 
 ---
