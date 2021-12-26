@@ -41,7 +41,7 @@ Testes automatizados ainda não foram implementados
 * [VSCode](https://code.visualstudio.com/?wt.mc_id=DX_841432) - Editor de código utilizado
 * [POSTMAN](https://www.postman.com/downloads/) - Software utilizado para testar os métodos implementados na API
 * [NodeJS](https://nodejs.org/en/download/) - Para execução de código Java Script fora de um navegador web.
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [GIT](https://git-scm.com/downloads) - Usado para versionamento de código
 
 ## 🖇️ Colaborando
 
