@@ -1,2 +1,7 @@
-# API---2-Sprint
-Avaliação da 2ª Sprint, PB NodeJS, Compass UOL
+# CRUD - NodeJS
+
+## 1º DESAFIO - proposto como avaliação da 2ª Sprint do Programa de Bolsas NodeJS, Compass UOL
+
+
+
+
