@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const config = require('config')
+require('./banco-de-dados/criarTabelas')
 
 const bodyParser = require('body-parser')
 

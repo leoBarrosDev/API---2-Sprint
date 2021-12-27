@@ -1,12 +1,16 @@
 const Modelo = require('./ModeloTabelaTasks')
 
 module.exports = {
-    listar() {
-
+    listar(idAtividade) {
+        return Modelo.findAll({
+            where: {
+                atividade: idAtividade
+            }
+        })
     },
 
-    inserir(task) {
-
+    inserir(dadosObtidos) {
+        return Modelo.create(dadosObtidos)
     },
 
     atualizar() {

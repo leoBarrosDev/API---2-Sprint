@@ -20,6 +20,7 @@ const colunas = {
     allowNull: false
   }
 
+
 }
 
 const opcoes = {

@@ -1,7 +1,16 @@
+const { INTEGER } = require('sequelize')
 const Sequelize = require('sequelize')
 const instancia = require('../../../banco-de-dados')
 
 const colunas = {
+    id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true,
+        
+    },
+
     title: {
         type: Sequelize.STRING,
         allowNull: false
@@ -11,7 +20,7 @@ const colunas = {
         allowNull: false
     },
     completed: {
-        type: Sequelize.ENUM('false', 'true'),
+        type: Sequelize.BOOLEAN,
         allowNull: false
     },
     atividade: {
