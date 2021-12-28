@@ -14,12 +14,22 @@ class Task {
             title: this.title,
             taskRelevance: this.taskRelevance,
             completed: this.completed,
-            
+            atividade: this.atividade
+
         })
 
         this.id = resultado.id
         this.atividade = resultado.atividade
 
+    }
+
+    async carregar() {
+        const encontrada =
+            await TabelaTask.selecionarPorId(this.id)
+        this.id = encontrada.id
+        this.title = encontrada.title
+        this.taskRelevance = encontrada.taskRelevance
+        this.completed = encontrada.completed
     }
 
 }

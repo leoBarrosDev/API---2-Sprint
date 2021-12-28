@@ -13,6 +13,14 @@ module.exports = {
         return Modelo.create(dadosObtidos)
     },
 
+    async selecionarPorId(id) {
+        const encontrada = await Modelo.findOne({
+            where: {
+                id: id
+            }
+        })
+    },
+
     atualizar() {
 
     },
