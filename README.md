@@ -22,8 +22,7 @@ Foi utilizado o Git Bash como terminal para execução das linhas de comando
 2) Edite o arquivo \PB_NodeJS\CRUD-Sprint2\config\default.json inserindo nele os parametros de acesso do seu banco de dados
 3) Crie o banco de dados 'CRUD', isso pode ser feito tanto pelo SGBD como via linha de comando, fique a vontade
 4) Abra o diretório do projeto no editor de código de sua preferência
-5) Execute o comando 'npm install' para que as dependencias utilizadas no projeto sejam instaladas em sua máquina
-6) Execute o arquivo criarTabelas.js que encontrasse em \PB_NodeJS\CRUD-Sprint2\api\banco-de-dados, nesse momento duas tabelas serão criadas em seu banco já existente
+5) Execute o comando 'npm install' para que as dependencias utilizadas no projeto sejam instaladas em sua máquina e as tabelas sejam criadas automaticamente
 7) Execute o comando 'npm start', nesse momento a API será inicializada e uma mensagem deve aparecer no terminal indicando que a mesma está funcionando
 8) Abra o POSTMAN para realizar o teste das rotas, na url digite http://localhost:3000/api/project/ e selecione o método GET, pressione o botão SEND, o sistema irá retornar todos os registros do banco de dados CRUD
 9) Ainda no POSTMAN podemos inserir dados no banco por meio do método POST, na url insira http://localhost:3000/api/project/, selecione a opção Body, depois a opção raw e JSON, no corpo do Body insira os dados por meio de um objeto tipo json, como as chaves "title" e "description", pressione SEND para que os mesmos sejam inseridos no banco de dados
